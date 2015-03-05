@@ -1,0 +1,9 @@
+def letter_frequency(s):
+    q = str(s).casefold();
+    l = "abcdefghijklmnopqrstuvwxyz";
+    a = 0;
+    b = 1;
+    while b < 26:
+        print(str(l[a:b])+" = "+str(q.count(l[a:b])));
+        a+=1;
+        b+=1;
