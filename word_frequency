@@ -1,0 +1,10 @@
+def word_frequency(s):
+    r = s.casefold();
+    l = r.split();
+    dic = dict();
+    for word in l:
+        if word not in dic:
+            dic[word] = 1;
+        else:
+            dic[word] += 1;
+    print(dic);  
